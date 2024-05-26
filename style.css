@@ -34,13 +34,17 @@ a{
 }
 .header
 {
-    color:aliceblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: aliceblue;
     display: flex;
-    margin-top: 20px    ;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    justify-content: space-between;
-    margin-left: 50px;
     align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background-color: black;
+    z-index: 1000;
 }
 .navbar{
     gap:2rem;
@@ -128,7 +132,6 @@ h3{
     border-radius: 50%;
     width:50%;
     margin-left: 200px;
-    margin-bottom: 500px;
     cursor: pointer;
 }
 .home-image:hover{
@@ -136,4 +139,68 @@ h3{
     border-color: rgb(71, 255, 194);
     box-shadow: 0px 0px 70px rgb(71, 255, 194);
     transition: 0.5s;
+}
+.edu{
+    color:aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 80px;
+    font-size: 2rem;
+    margin-left: 50px;
+    cursor: pointer;
+    margin-bottom: 20px;
+   
+}
+.edu:hover{
+    color: aquamarine;
+}
+.degree{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.school{
+    width: 500px;
+    height: 150px;
+    border: 2px solid rgb(71, 255, 194);
+    background-color: rgb(71, 255, 194);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    padding: 1.5rem;
+}
+.school:hover{
+    background-color: aliceblue;
+    transition: 1s;
+    box-shadow: 0px 0px 5px rgb(71, 255, 194);
+}
+.deg{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap:20px;
+}
+
+.skills{
+    width: 500px;
+    height: 150px;
+    border: 2px solid rgb(71, 255, 194);
+    background-color: rgb(71, 255, 194);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    padding: 1.5rem;
+}
+.skills:hover{
+    background-color: aliceblue;
+    transition: 1s;
+    box-shadow: 0px 0px 5px rgb(71, 255, 194);
 }
