@@ -1,0 +1,139 @@
+html
+{
+    background-color: black;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.logo{
+    font-size: 3rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.na{
+    color: aquamarine;
+}
+
+.contant
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+   color: aliceblue ; 
+   margin-top: 150px;
+   margin-left: 50px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.header
+{
+    color:aliceblue;
+    display: flex;
+    margin-top: 20px    ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: space-between;
+    margin-left: 50px;
+    align-items: center;
+}
+.navbar{
+    gap:2rem;
+    display: flex;
+    margin-right: 200px;
+   
+}
+.home,.about,.contact{
+    height:30px;
+    width : 100px;
+    color: aliceblue;
+    border-radius: 7%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    padding-top: 10px;
+    
+}   
+.home:hover,.about:hover,.contact:hover{
+    box-shadow: 1px 3px 4px aquamarine;
+    transition: 0.5s;
+    color:aquamarine;
+    background-color: rgb(8, 8, 8);
+
+}
+.home:active,.about:active,.contact:active{
+    color:black;
+    background-color: aquamarine;
+    box-shadow: 1px 3px 4px aquamarine;
+    transition: 0.5s;
+
+}
+h3{
+    margin-top: 10px;
+}
+.container1{
+    width: 700px;
+    margin-left: 20px;
+    font-size:18px ;
+}
+.link{
+    gap:2rem;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    display: flex;
+    
+   
+}
+.link a{
+    padding: 10px;
+    border: 2px solid transparent;
+    transition: 0.5s;
+}
+.link a:hover{
+    color: aquamarine;
+    border: 2px solid aquamarine;
+    border-radius: 100px;
+    transition: 1s;
+    
+}
+.resume,.con{
+    background-color:black; 
+    border-color: rgb(71, 255, 194);
+    color: rgb(71, 255, 194);
+    height: 40px;
+    width: 130px;
+    font-size: larger;
+    margin-top: 20px;
+    margin-left: 15px;
+    border-radius: 20px;
+    cursor:pointer;
+}
+.resume:hover,.con:hover{
+    background-color:rgb(71, 255, 194) ;
+    color: black;
+    box-shadow: 1px 2px 4px rgb(71, 255, 194);
+    transition: 0.5s;
+
+}
+
+.home-image{
+    border-radius: 50%;
+    width:50%;
+    margin-left: 200px;
+    margin-bottom: 500px;
+    cursor: pointer;
+}
+.home-image:hover{
+    background-color: aqua;
+    border-color: rgb(71, 255, 194);
+    box-shadow: 0px 0px 70px rgb(71, 255, 194);
+    transition: 0.5s;
+}
