@@ -108,7 +108,7 @@ h3{
     color: aquamarine;
     border: 2px solid aquamarine;
     border-radius: 100px;
-    transition: 1s;
+    transition: 0.5s;
     
 }
 .resume,.con{
