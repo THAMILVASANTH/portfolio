@@ -11,6 +11,7 @@
             <nav class="navbar">
                 
                     <a class="home" href="home.html">Home</a>
+                    <a class="education" href="education.html">Education</a>
                     <a class="about" href="about.html">About</a>
                     <a class="contact" href="contact.html">Contact</a>
                 
@@ -45,31 +46,45 @@
     <div class="degree">
         <div class="school">
             <h3>School</h3>
-            <p>I'm finished my SSCL in 2020 and HSC in 2022 in Kongu nation Matric Higher Secondary School</p>
+            <p>I done my SSCL in 2020 and HSC in 2022 in Kongu national Matric Higher Secondary School.</p>
         </div>
         <div class="school">
             <h3>UG Degree</h3>
             <p>I'm currently pursuing B.E degree as Computer Science Engineer in Kongu Engineering College (Batch 2022-2026).</p>
         </div>
         
-        
+     
     
     
     </div>
     <div class="deg">
         <div class="skills">
-            <h3>School</h3>
-            <p>I'm finished my SSCL in 2020 and HSC in 2022 in Kongu nation Matric Higher Secondary School</p>
+            <h3>Foreign Language</h3>
+            <p>I have successfully completed Japanese language courses in college, including writing, for two semesters.</p>
         </div>  
         <div class="skills">
-            <h3>UG Degree</h3>
-            <p>I'm currently pursuing B.E degree as Computer Science Engineer in Kongu Engineering College (Batch 2022-2026).</p>
+            <h3>Implant Training</h3>
+            <p></p>
         </div>
+</div>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('slide-in');
+                    observer.unobserve(entry.target); // Optional: stop observing after animation
+                }
+            });
+        });
     
-        
+        document.querySelectorAll('.school, .skills').forEach(element => {
+            observer.observe(element);
+        });
+    });
+    </script>
     
-    
-    </div>
+
     </body>
 </html>
