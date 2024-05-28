@@ -21,6 +21,7 @@ a{
 }
 .na{
     color: aquamarine;
+    
 }
 
 .contant
@@ -48,11 +49,12 @@ a{
 }
 .navbar{
     gap:2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     margin-right: 200px;
    
 }
-.home,.about,.contact{
+.home,.education,.about,.contact{
     height:30px;
     width : 100px;
     color: aliceblue;
@@ -64,7 +66,7 @@ a{
     padding-top: 10px;
     
 }   
-.home:hover,.about:hover,.contact:hover{
+.home:hover,.education:hover,.about:hover,.contact:hover{
     box-shadow: 1px 3px 4px aquamarine;
     transition: 0.5s;
     color:aquamarine;
@@ -85,6 +87,7 @@ h3{
     width: 700px;
     margin-left: 20px;
     font-size:18px ;
+    
 }
 .link{
     gap:2rem;
@@ -132,20 +135,25 @@ h3{
     border-radius: 50%;
     width:50%;
     margin-left: 200px;
-    cursor: pointer;
+    animation: glow 2s infinite;
 }
-.home-image:hover{
-    background-color: aqua;
-    border-color: rgb(71, 255, 194);
-    box-shadow: 0px 0px 70px rgb(71, 255, 194);
-    transition: 0.5s;
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0px 0px 0px rgb(71, 255, 194);
+    }
+    50% {
+        box-shadow: 0px 0px 50px rgb(71, 255, 194);
+    }
 }
+
 .edu{
     color:aliceblue;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 80px;
+    margin-top: 50px;
+    width:50px;
+    margin-left: 40%;
     font-size: 2rem;
-    margin-left: 50px;
+    
     cursor: pointer;
     margin-bottom: 20px;
    
@@ -164,6 +172,7 @@ h3{
 .school{
     width: 500px;
     height: 150px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: 2px solid rgb(71, 255, 194);
     background-color: rgb(71, 255, 194);
     display: flex;
@@ -175,7 +184,7 @@ h3{
 }
 .school:hover{
     background-color: aliceblue;
-    transition: 1s;
+    transition: 0.5s;
     box-shadow: 0px 0px 5px rgb(71, 255, 194);
 }
 .deg{
@@ -190,6 +199,7 @@ h3{
 .skills{
     width: 500px;
     height: 150px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: 2px solid rgb(71, 255, 194);
     background-color: rgb(71, 255, 194);
     display: flex;
@@ -201,6 +211,21 @@ h3{
 }
 .skills:hover{
     background-color: aliceblue;
-    transition: 1s;
+    transition: 0.s;
     box-shadow: 0px 0px 5px rgb(71, 255, 194);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in {
+    animation: slideIn 1s ease-in-out forwards;
 }
